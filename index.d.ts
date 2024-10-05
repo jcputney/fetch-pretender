@@ -1,4 +1,4 @@
-declare module 'pretender' {
+declare module 'fetch-pretender' {
     interface Request {
         method: string;
         url: string;
