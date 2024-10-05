@@ -42,5 +42,5 @@ declare module 'fetch-pretender' {
         shutdown(): void;
     }
 
-    export = Pretender;
+    export default Pretender;
 }
