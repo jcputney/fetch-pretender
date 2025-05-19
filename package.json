@@ -10,7 +10,7 @@
     "test": "npm run lint && npm run jscs && npm run tests-only",
     "test-ci": "npm run pretest && npm run lint && npm run jscs && npm run tests-only-ci",
     "tests-only": "karma start --single-run",
-    "tests-only-ci": "karma start --single-run --browsers PhantomJS",
+    "tests-only-ci": "CHROME_BIN=chromium karma start --single-run",
     "lint": "jshint main.js test",
     "jscs": "jscs main.js test",
     "test:server": "karma start --no-single-run"
@@ -28,10 +28,8 @@
     "karma": "^0.13.8",
     "karma-chrome-launcher": "^0.2.0",
     "karma-coverage": "^0.5.0",
-    "karma-phantomjs-launcher": "^0.2.0",
     "karma-qunit": "^0.1.8",
     "mkdirp": "^0.5.1",
-    "phantomjs": "^1.9.17",
     "qunitjs": "^1.20.0"
   },
   "dependencies": {
